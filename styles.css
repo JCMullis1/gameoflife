@@ -1,0 +1,141 @@
+body {
+    background-color: #7090ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.toggle {
+    position: relative;
+}
+
+.toggle input {
+    position: absolute;
+    opacity: 0%;
+    width: 0;
+    height: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+    position: inherit;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 4em;
+    height: 2em;
+    margin-left: 47.7%;
+    margin-bottom: 20px;
+    border-radius: 10%;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 1.6em;
+    width: 1.6em;
+    background-color: white;
+    transition: 0.25s;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #33ecec;
+    box-shadow: 0 0 12px #33ecec;
+}
+
+input:checked + .slider:before {
+    transform: translateX(32px);
+}
+
+.toggle .onoff {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+}
+
+input {
+    color: white;
+    border: solid royalblue 1px;
+    border-radius: 3px;
+    width: 220px;
+    height: 40px;
+    font-size: 120%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: royalblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+#counter-el {
+    border: 3px;
+    padding: 10px;
+    border-radius: 3px;
+    width: fit-content;
+    height: 35px;
+    font-size: 200%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: royalblue;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+button {
+    border: 3px;
+    border-radius: 3px;
+    width: 190px;
+    height: 40px;
+    font-size: 180%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: royalblue;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(10, 3rem);
+    grid-auto-rows: 3rem;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    border: solid 1px navy;
+    height: 48px;
+}
+
+.dead {
+    color: black;
+    background-color: white;
+}
+
+.alive {
+    color: white;
+    background-color: black;
+}

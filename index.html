@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Jonways Game of Life</title>
+    </head>
+    <body id="body-el">
+        <input
+            id="size-el"
+            type="text"
+            placeholder="Size of game (max of 30)"
+        />
+        <h3>Manual toggle</h3>
+        <label class="toggle">
+            <span class="onoff">OFF</span>
+            <input type="checkbox" />
+            <span class="slider"></span>
+        </label>
+        <button id="start-btn">START GAME</button>
+        <h1 id="counter-el"></h1>
+        <div id="grid-container"></div>
+        <script src="game.js"></script>
+    </body>
+</html>
